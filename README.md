@@ -5,7 +5,7 @@ O arsenal de copy direct-response do **Felipe Loriem**, empacotado como plugin d
 > Na era da IA, a habilidade não é **criar**. É **diagnosticar**.
 > Você diagnostica, a IA executa.
 
-Instala 9 agentes proprietários que fazem o Claude pensar como um copywriter DR de elite — do zero ao webinário, do funil ao criativo.
+Instala um arsenal inteiro de agentes de copy dentro do seu Claude — do primeiro insight de pesquisa ao webinário no ar. Alguns você comanda; outros disparam sozinhos enquanto você trabalha.
 
 ---
 
@@ -18,59 +18,38 @@ Você precisa do [Claude Code](https://claude.com/claude-code) instalado. Dentro
 /plugin install maquina-de-crenca
 ```
 
-Pronto. As skills já estão ativas. Teste:
+Pronto. O arsenal já está ativo. Para atualizar quando sair versão nova:
 
 ```
-/mentecopy
+/plugin marketplace update maquina-de-crenca
 ```
-
-Para atualizar quando sair versão nova: `/plugin marketplace update maquina-de-crenca`.
 
 ---
 
-## 🗂 As 9 skills
+## 🗂 O que instala
 
-| Skill | Trigger | O que faz |
-|-------|---------|-----------|
-| **MenteCopy** | `/mentecopy` | Ativa a lente de pensamento DR black (economia > copy, estilo Sultanic). Compõe com todas as outras. |
-| **SherlockTube** | `/sherlocktube` | Minera comentários do YouTube e extrai a voz real do público — dores, desejos, crenças, objeções. |
-| **MasterBelief** | `/masterbelief` | Transforma a pesquisa no **One Belief** — as 10 perguntas de persuasão viradas numa narrativa só. |
-| **Vórtice** | `/vortice` | Monta a apresentação de vendas inteira (webinário, VSL, carta) num framework campeão. |
-| **RaioX** | `/raiox` | Diagnóstico de funil pela Cadeia das 5 Crenças — acha onde vaza e por quê. |
-| **AdsLoriem** | `/adsloriem` | Adapta criativos validados para novos nichos/experts, preservando a estrutura persuasiva. |
-| **SuperFluxo** | `/superfluxo` | Gera fluxos de automação WhatsApp (captura + antecipação) prontos pra importar. |
-| **Slides** | `/slides` | Gera slides de webinário de vendas do zero. |
-| **Comentários** | `/comentarios` | Transforma um MP4 de webinário em chat orgânico simulado (CSV cronometrado). |
+Não é uma skill — é uma **máquina**. Dezenas de agentes cobrindo cada canto do funil:
 
----
+- **Pesquisa** — a voz real do público, minerada.
+- **Crença** — a pesquisa vira o One Belief.
+- **Apresentação** — webinário, VSL, carta, advertorial.
+- **Criativos** — do zero e por variação do campeão.
+- **Funil** — diagnóstico do que vaza e por quê.
+- **Automação** — os fluxos que levam o lead até o show-up.
+- **E o resto no automático** — CRO, e-mail, pricing, retenção, tráfego… disparando sozinho.
 
-## 🔁 O fluxo (a rotina de copy)
-
-O jeito de usar em sequência — cada etapa alimenta a próxima:
-
-```
-SherlockTube  →  MasterBelief  →  Vórtice / AdsLoriem
- (a voz)          (a crença)        (a execução)
-                       ↑
-                   MenteCopy (a lente, sempre ligada)
-                       ↓
-                   RaioX (diagnostica o funil no ar)
-```
-
-A IA roda cada etapa. Você fica **entre** elas, diagnosticando.
+Você não precisa decorar comando nenhum. **Comece a trabalhar copy — o arsenal reage.**
 
 ---
 
-## 🔧 Requisitos por skill
+## 🔧 Requisitos
 
-A maioria das skills roda **só com o Claude** (raciocínio + geração de texto/HTML). Duas precisam de ferramenta local:
+Quase tudo roda só com o Claude. Dois recursos usam uma ferramenta local:
 
-| Skill | Precisa de |
-|-------|-----------|
-| **SherlockTube** | uma **YouTube Data API key** na variável de ambiente `YOUTUBE_API_KEY` + `python3`. [Como pegar a key →](https://console.cloud.google.com/apis/library/youtube.googleapis.com) |
-| **Comentários** | `ffmpeg` instalado (`brew install ffmpeg`) + `python3`. O Whisper se instala sozinho no primeiro uso. |
-
-As demais 7 skills não têm dependência externa. Skills que geram HTML/slides podem sugerir deploy no Vercel — use suas próprias contas.
+| Recurso | Precisa de |
+|---------|-----------|
+| **Pesquisa de público** | uma **YouTube Data API key** na variável `YOUTUBE_API_KEY` + `python3`. [Como pegar →](https://console.cloud.google.com/apis/library/youtube.googleapis.com) |
+| **Transcrição de vídeo** | `ffmpeg` (`brew install ffmpeg`) + `python3`. O resto se instala sozinho. |
 
 ---
 
