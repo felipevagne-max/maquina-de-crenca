@@ -14,7 +14,7 @@ Instala 9 agentes proprietários que fazem o Claude pensar como um copywriter DR
 Você precisa do [Claude Code](https://claude.com/claude-code) instalado. Dentro dele, digite:
 
 ```
-/plugin marketplace add felipeloriem/maquina-de-crenca
+/plugin marketplace add felipevagne-max/maquina-de-crenca
 /plugin install maquina-de-crenca
 ```
 
