@@ -1,0 +1,20 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "maquina-de-crenca",
+  "description": "A Maquina de Crenca — o arsenal de copy direct-response do Felipe Loriem, instalavel no seu Claude Code.",
+  "owner": {
+    "name": "Felipe Loriem"
+  },
+  "plugins": [
+    {
+      "name": "maquina-de-crenca",
+      "description": "9 agentes de copy DR: MenteCopy, SherlockTube, MasterBelief, Vortice, RaioX, AdsLoriem, SuperFluxo, Slides e Comentarios. Voce diagnostica, a IA executa.",
+      "author": {
+        "name": "Felipe Loriem"
+      },
+      "source": "./plugins/maquina-de-crenca",
+      "category": "productivity",
+      "homepage": "https://github.com/felipeloriem/maquina-de-crenca"
+    }
+  ]
+}

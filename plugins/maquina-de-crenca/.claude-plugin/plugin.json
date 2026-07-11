@@ -1,0 +1,10 @@
+{
+  "name": "maquina-de-crenca",
+  "description": "A Maquina de Crenca — 9 agentes de copy direct-response. MenteCopy (lente DR estilo Sultanic), SherlockTube (pesquisa de publico), MasterBelief (One Belief), Vortice (webinar/VSL/carta), RaioX (diagnostico de funil), AdsLoriem (adaptar criativo validado), SuperFluxo (automacao WhatsApp), Slides (apresentacao de vendas) e Comentarios (chat organico de webinario). A tese: na era da IA, a habilidade nao e criar, e diagnosticar. Voce diagnostica, a IA executa.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Felipe Loriem"
+  },
+  "homepage": "https://github.com/felipeloriem/maquina-de-crenca",
+  "keywords": ["copy", "copywriting", "direct-response", "marketing", "webinar", "vsl", "funil", "criativos"]
+}
