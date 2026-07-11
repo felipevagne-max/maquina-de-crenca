@@ -61,8 +61,17 @@ A IA roda cada etapa. Você fica **entre** elas, diagnosticando.
 
 ---
 
-## 📝 Notas
+## 🔧 Requisitos por skill
 
-- Algumas skills geram HTML/slides e podem sugerir deploy no Vercel — use suas próprias contas/ferramentas.
-- Geração de imagens, transcrição de vídeo e afins usam as ferramentas que **você** tiver configuradas.
-- Feito com ❤️ e Claude Code. Dúvidas: [@felipe.loriem](https://www.instagram.com/felipe.loriem/).
+A maioria das skills roda **só com o Claude** (raciocínio + geração de texto/HTML). Duas precisam de ferramenta local:
+
+| Skill | Precisa de |
+|-------|-----------|
+| **SherlockTube** | uma **YouTube Data API key** na variável de ambiente `YOUTUBE_API_KEY` + `python3`. [Como pegar a key →](https://console.cloud.google.com/apis/library/youtube.googleapis.com) |
+| **Comentários** | `ffmpeg` instalado (`brew install ffmpeg`) + `python3`. O Whisper se instala sozinho no primeiro uso. |
+
+As demais 7 skills não têm dependência externa. Skills que geram HTML/slides podem sugerir deploy no Vercel — use suas próprias contas.
+
+---
+
+Feito com ❤️ e Claude Code por **Felipe Loriem** — [@felipe.loriem](https://www.instagram.com/felipe.loriem/).
